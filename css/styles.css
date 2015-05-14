@@ -125,9 +125,12 @@ img:last-of-type {
 
 
 
-.navbar {
+/*.navbar {
+  overflow-y: none;
+  position: sticky;
+  top: 0;
   margin-bottom: 0px;
-}
+}*/
 
 .banner {
   font-size: 500%;
