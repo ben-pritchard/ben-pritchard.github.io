@@ -123,7 +123,6 @@ img[class=glued] {
 
 #slide2 {
   background-image: url("img/machu_picchu.jpg");
-  /*background-attachment: fixed;*/
 }
 
 #slide3:before {
@@ -140,15 +139,6 @@ img[class=glued] {
   padding: 10vh 10%;
 }
 
-
-
-/*.navbar {
-  overflow-y: none;
-  position: sticky;
-  top: 0;
-  margin-bottom: 0px;
-}*/
-
 .banner {
   font-size: 500%;
 }
@@ -161,6 +151,17 @@ img[class=glued] {
   color: white;
 }
 
-.right {
-  text-align: right;
+p[class=slide4] {
+  color: white;
+  text-align: left;
+}
+
+.info {
+  font-size: 100%;
+  line-height: 100%;
+  text-align: left;
+}
+
+.foot {
+  padding-top: 5%;
 }
