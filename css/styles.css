@@ -42,7 +42,7 @@ p {
 	transform-style: inherit;
 }
 
-img {
+img[class=floaty] {
   position: absolute;
   top: 50%;
   left: 35%;
@@ -57,6 +57,19 @@ img {
 
 img:last-of-type {
   transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+img[class=glued] {
+  position: none;
+  top: none;
+  left: none;
+  width: 320px;
+  height: 240px;
+  transform: none;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
 .slide:before {
@@ -109,18 +122,22 @@ img:last-of-type {
 }
 
 #slide2 {
-  background-image: url("img/sky.jpg");
-  background-attachment: fixed;
+  background-image: url("img/machu_picchu.jpg");
+  /*background-attachment: fixed;*/
 }
 
 #slide3:before {
-  background-image: url("img/autumn_day.jpg");
+  background-image: url("img/library.jpg");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
 
 #slide4 {
   background: #222;
+  color: white;
+  text-shadow: none;
+  background-attachment: fixed;
+  padding: 10vh 10%;
 }
 
 
@@ -138,4 +155,12 @@ img:last-of-type {
 
 .no-shadow {
   text-shadow: none;
+}
+
+.slide4 {
+  color: white;
+}
+
+.right {
+  text-align: right;
 }
